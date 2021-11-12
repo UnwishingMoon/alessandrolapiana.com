@@ -23,9 +23,9 @@
 
         <link rel="icon" sizes="240x240" type="image/png" href="assets/img/favicon.png" />
 
-        <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/dark.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/plugins.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/dark.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
     </head>
     <body class="dark">
         <!-- Preloader -->
@@ -34,7 +34,8 @@
         </div>
 
         <!-- Wrapper -->
-        <div class="tokyo_tm_all_wrap" data-magic-cursor="" data-color="white"> <!-- If you want disable magic cursor add value "hide" -->
+        <div class="tokyo_tm_all_wrap" data-magic-cursor="" data-color="white">
+            <!-- If you want disable magic cursor add value "hide" -->
 
             <!-- Mobile menu -->
             <div class="tokyo_tm_mobile_menu">
@@ -49,6 +50,9 @@
                             </li>
                             <li>
                                 <a href="#about"><i class="fas fa-user"></i></a>
+                            </li>
+                            <li>
+                                <a href="#portfolio"><i class="fas fa-images"></i></a>
                             </li>
                             <li>
                                 <a href="#contact"><i class="fas fa-envelope"></i></a>
@@ -68,6 +72,7 @@
                         <ul>
                             <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#contact">Contattami</a></li>
                         </ul>
                     </div>
@@ -127,7 +132,7 @@
                                         <div class="left">
                                             <p>Cosa scrivo???</p>
                                             <div class="tokyo_tm_button">
-                                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/lapianaalessandro">Leggi altro</a>
+                                                <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/lapianaalessandro">Leggi altro</a>
                                             </div>
                                         </div>
                                         <div class="right">
@@ -159,6 +164,75 @@
                         </div>
                     </div>
 
+                    <!-- Portfolio -->
+                    <div id="portfolio" class="tokyo_tm_section">
+                        <div class="container">
+                            <div class="tokyo_tm_portfolio">
+                                <div class="tokyo_tm_title">
+                                    <div class="title_flex">
+                                        <div class="left">
+                                            <span>Portfolio</span>
+                                            <h3>Avventure</h3>
+                                        </div>
+                                        <div class="portfolio_filter">
+                                            <ul>
+                                                <li><a href="#" class="current" data-filter="*">All</a></li>
+                                                <li><a href="#" data-filter=".vimeo">Vimeo</a></li>
+                                                <li><a href="#" data-filter=".youtube">Youtube</a></li>
+                                                <li><a href="#" data-filter=".soundcloud">Soundcloud</a></li>
+                                                <li><a href="#" data-filter=".image">Image</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list_wrapper">
+                                    <ul class="portfolio_list gallery_zoom">
+                                        <li class="vimeo">
+                                            <div class="inner">
+                                                <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Teresa Butler" data-category="Vimeo">
+                                                    <a class="popup-vimeo" href="https://vimeo.com/312334044">
+                                                        <img src="assets/img/portfolio-placeholder.jpg" alt="" />
+                                                        <div class="main_image" data-img-url="assets/img/profile.jpg"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="youtube">
+                                            <div class="inner">
+                                                <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Ashley Flores" data-category="Youtube">
+                                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=Amq-qlqbjYA">
+                                                        <img src="assets/img/portfolio-placeholder.jpg" alt="" />
+                                                        <div class="main_image" data-img-url="assets/img/profile.jpg"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="soundcloud">
+                                            <div class="inner">
+                                                <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Derek Smith" data-category="Soundcloud">
+                                                    <a class="soundcloude_link mfp-iframe audio" href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
+                                                        <img src="assets/img/portfolio-placeholder.jpg" alt="" />
+                                                        <div class="main_image" data-img-url="assets/img/profile.jpg"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="image">
+                                            <div class="inner">
+                                                <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Gloria Jenkins" data-category="Image">
+                                                    <a class="zoom" href="assets/img/profile.jpg">
+                                                        <img src="assets/img/portfolio-placeholder.jpg" alt="" />
+                                                        <div class="main_image" data-img-url="assets/img/profile.jpg"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- CONTACT -->
                     <div id="contact" class="tokyo_tm_section">
                         <div class="container">
@@ -172,7 +246,7 @@
                                     </div>
                                 </div>
                                 <div class="map_wrap">
-                                    <div class="map" id="ieatmaps"></div>
+                                    <iframe class="map" id="ieatmaps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyApRRPO8xBUATkcG-neKNN5uo8pi2WH2-4&q=Imola,Italy&zoom=11" allowfullscreen></iframe>
                                 </div>
                                 <div class="fields">
                                     <form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
@@ -214,6 +288,5 @@
         <script src="assets/js/fontawesome.all.min.js"></script>
         <script src="assets/js/plugins.min.js"></script>
         <script src="assets/js/init.min.js"></script>
-        <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly&q=Imola,Italy"></script>
     </body>
 </html>
