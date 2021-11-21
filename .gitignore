@@ -1,3 +1,9 @@
 materials/
 vendor/
 composer.lock
+
+# Ignore non minified assets
+*.css
+!*.min.css
+*.js
+!*.min.js
