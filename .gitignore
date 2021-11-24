@@ -1,9 +1,117 @@
+# Custom folder / files
 materials/
-vendor/
-composer.lock
-
-# Ignore non minified assets
 *.css
 !*.min.css
 *.js
 !*.min.js
+
+# Excluding this files
+!.gitkeep
+!trunk/toProcess/
+
+# Dependencies and libraries
+vendor/
+composer.lock
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.exe~
+*.o
+*.so
+*.dylib
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.bz2
+*.xz
+*.gzip
+
+# Logs and databases
+*.log
+*.sqlite
+
+# OS generated files
+.Spotlight-V100
+.Trashes
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Golang
+*.test
+*.out
+
+# VS Code files for those working on multiple tools
+.vscode/
+*.code-workspace
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+node_modules/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Build dir
+build/
+
+# MacOS
+.AppleDouble
+.LSOverride
+.DS_Store
+.DS_Store?
+._*
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Ignore build folder AWS SAM
+.aws-sam/
