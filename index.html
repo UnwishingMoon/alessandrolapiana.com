@@ -14,11 +14,16 @@
     <!-- Robots -->
     <meta name="robots" content="index, follow" />
 
+    <!-- Cookiebot -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e5314675-4859-4dc4-b86d-0e2bbe323784" data-blockingmode="auto" type="text/javascript"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHMZJ83EQS"></script>
-    <script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-DHMZJ83EQS"></script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-DHMZJ83EQS');
@@ -50,7 +55,9 @@
         <div class="tokyo_tm_mobile_menu">
             <div class="menu_inner">
                 <div class="logo">
-                    <img src="assets/img/logo-dark.png" alt="" />
+                    <a rel="noopener noreferrer" href="/">
+                        <img src="assets/img/logo-dark.png" alt="logp home" />
+                    </a>
                 </div>
                 <div class="menu">
                     <ul>
@@ -66,6 +73,9 @@
                         <li>
                             <a href="#contact"><i class="fas fa-envelope"></i></a>
                         </li>
+                        <li>
+                            <a href="#privacy"><i class="fas fa-cookie-bite"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -75,7 +85,7 @@
         <div class="leftpart">
             <div class="leftpart_inner">
                 <div class="logo">
-                    <a href="#"><img src="assets/img/logo-white.png" alt="" /></a>
+                    <a href="/"><img src="assets/img/logo-white.png" alt="logo home" /></a>
                 </div>
                 <div class="menu">
                     <ul>
@@ -83,6 +93,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contattami</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="copyright">
@@ -234,6 +245,23 @@
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="privacy" class="tokyo_tm_section">
+                    <div class="container">
+                        <div class="tokyo_tm_contact">
+                            <div class="tokyo_tm_title">
+                                <div class="title_flex">
+                                    <div class="left">
+                                        <span>Privacy</span>
+                                        <h3>Privacy &amp; Cookie policy</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script id="CookieDeclaration" src="https://consent.cookiebot.com/e5314675-4859-4dc4-b86d-0e2bbe323784/cd.js" type="text/javascript" async></script>
                         </div>
                     </div>
                 </div>
